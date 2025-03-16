@@ -71,68 +71,10 @@ G. Yuvraj Kashyap
 
 ## Grading Parameters  
 To be defined based on project evaluation criteria.  
+![image](https://github.com/user-attachments/assets/7e99e9a5-76b0-45be-9a55-6e7faac5f00b)
 
 ---
 
 ## Implementation Plans  
 
-### **Phase 1 Implementation**  
-**Requirements:**  
-- Develop a module that uses LLMs to generate a coherent story based on the user’s prompt.  
-- The story should be divided into four distinct parts: **Introduction**, **Storyline**, **Climax**, and **Moral**.  
-
-**Proposed Plan:**  
-- Use **DeepSeek R1 LLM** to generate a story divided into **Introduction**, **Storyline**, **Climax**, and **Moral**.  
-
-**Skills Required:**  
-- Know-how to run the DeepSeek model locally.  
-- Fine-tuning the LLM for story generation in this specific format.  
-
----
-
-### **Phase 2: Image Generation**  
-**Requirements:**  
-- Create a module that generates images corresponding to each part of the story using AI-based image generation tools.  
-- Ensure that the images align with the narrative.  
-
-**Proposed Plan:**  
-- Use **Stable Diffusion** to generate images.  
-
-**Skills Required:**  
-- Know-how to run the Stable Diffusion model locally.  
-- Fine-tuning the LLM for story generation in this specific format.  
-
----
-
-### **Phase 3: Merging Story Prompts and Images**  
-**Requirements:**  
-- Develop a system to merge the generated text and images into a cohesive comic book format.  
-- Ensure that the text and images are appropriately aligned and formatted.  
-
-**Proposed Plan:**  
-- Use the **Streamlit framework** to integrate image and text.  
-
-**Skills Required:**  
-- Streamlit development.  
-- Basics of web design and Python programming.  
-
----
-
-### **Phase 4: Integration into an App**  
-**Requirements:**  
-- Integrate the story generation, image generation, and merging modules into a single web application.  
-- Ensure the app is user-friendly and can run efficiently on edge devices.  
-
-**Comments:**  
-- Will be taken care of by **Streamlit**.  
-
-**Knowledge Needed:**  
-- Git basics  
-- Python  
-- Web design basics  
-- Prompt engineering  
-
----
-
-## Grading Parameters  
-To be defined based on project evaluation criteria.  
+![image](https://github.com/user-attachments/assets/ce70c926-4167-461b-9a60-aea34a3f4390)
