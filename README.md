@@ -1,80 +1,237 @@
-# Intel Unnati Industrial Training Program  
-## Documentation for ComicCrafter.AI  
+# 🎨 ComicCrafter  : A Next-Gen AI-Powered Comic Generation Tool 
 
-**Overview**  
-ComicCrafter AI is a generative AI-based comic generator that runs locally on edge devices. It generates a comic-style story based on input prompts given by the user.  
+# 1.Description
 
-**Documented by:**  
-G. Yuvraj Kashyap  
+ComicCrafter is an AI-powered tool that helps users generate comics using text prompts and AI-generated illustrations.  
+It combines DeepSeek for text processing and Flux.1 for image generation, wrapped in a Streamlit web app.
 
----
+# 3.Features
 
-## Phases of Production  
+Highlight key functionalities:
 
-### **Phase 1: LLM Story Generation using Prompting**  
-**Requirements:**  
-- Develop a module that uses Large Language Models (LLMs) to generate a coherent story based on the user’s prompt.  
-- The story should be divided into four distinct parts: **Introduction**, **Storyline**, **Climax**, and **Moral**.  
+🖌 AI-generated comic panels
 
-**Proposed Plan:**  
-- Use **DeepSeek R1 LLM** to generate a structured story divided into the four defined parts.  
+⚡ Fast and interactive web-based UI (built with Streamlit)
 
-**Skills Required:**  
-- Running the DeepSeek model locally.  
-- Fine-tuning the LLM for story generation in this specific format.  
 
----
+4. Demo
 
-### **Phase 2: Image Generation**  
-**Requirements:**  
-- Create a module that generates images corresponding to each part of the story using AI-based image generation tools.  
-- Ensure that the images align with the narrative.  
+Include a short video or GIF showcasing the tool.
 
-**Proposed Plan:**  
-- Use **Stable Diffusion** to generate images for each section of the story.  
+5. Installation
 
-**Skills Required:**  
-- Running the Stable Diffusion model locally.  
-- Fine-tuning Stable Diffusion to align with the generated story.  
+Provide step-by-step instructions:
 
----
+# Clone the repository
+git clone https://github.com/yourusername/comiccrafter.git
+cd comiccrafter
 
-### **Phase 3: Merging Story Prompts and Images**  
-**Requirements:**  
-- Develop a system to merge the generated text and images into a cohesive comic book format.  
-- Ensure that the text and images are appropriately aligned and formatted.  
+# Dependencies
+ 1. [Python 3.8+](https://www.python.org/downloads/)
 
-**Proposed Plan:**  
-- Use the **Streamlit framework** to integrate text and images into a comic book format.  
+ 2. pip
 
-**Skills Required:**  
-- Streamlit development.  
-- Basics of web design and Python programming.  
+ 3. Streamlit : ```pip install streamlit```
 
----
+ 4. [Ollama](https://ollama.com/) 
 
-### **Phase 4: Integration into an App**  
-**Requirements:**  
-- Integrate the story generation, image generation, and merging modules into a single web application.  
-- Ensure the app is user-friendly and can run efficiently on edge devices.  
+ 5. [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+        [Custom GGUF node](https://github.com/city96/ComfyUI-GGUF)
+        [Model name: flux1-dev-Q4_0.gguf](https://huggingface.co/city96/FLUX.1-dev-gguf/tree/main)
+        [Encoder 1 :clipl](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main)
+        [Encoder 2 :t5 encoder](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main)
+        [VAE file](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors)
+ 6. Mistral model (for local text processing)
+    - Download the Mistral model in ollama using the following command
+    ```ollama run mistral```
+ 7. Flux.1 Dev GGUF model (for image generation)
 
-**Comments:**  
-- This phase will be implemented using **Streamlit**.  
 
-**Knowledge Needed:**  
-- Git basics  
-- Python programming  
-- Web design basics  
-- Prompt engineering  
+# Run the app
+streamlit run app.py
 
----
+6. Usage
 
-## Grading Parameters  
-To be defined based on project evaluation criteria.  
-![image](https://github.com/user-attachments/assets/7e99e9a5-76b0-45be-9a55-6e7faac5f00b)
+Explain how to use the tool effectively with screenshots.
 
----
+7. Architecture
 
-## Implementation Plans  
+Describe the technical stack and workflow:
 
-![image](https://github.com/user-attachments/assets/ce70c926-4167-461b-9a60-aea34a3f4390)
+Frontend: Streamlit
+
+AI Models: DeepSeek, Stable Diffusion
+
+Backend: Python (FastAPI if applicable)
+
+Deployment: (e.g., Hugging Face, AWS, or other platforms)
+
+
+(Optional: Include an architecture diagram.)
+
+8. Contribution Guidelines
+
+Provide a brief contribution guide and link to CONTRIBUTING.md.
+
+9. Roadmap
+
+List planned features and improvements.
+
+10. License
+
+Mention the project's license (e.g., MIT, Apache 2.0).
+
+
+# 🎨 ComicCrafter  : A Next-Gen AI-Powered Comic Generation Tool 
+
+# 1.Description
+
+ComicCrafter is an AI-powered tool that helps users generate comics using text prompts and AI-generated illustrations.  
+It combines DeepSeek for text processing and Flux.1 for image generation, wrapped in a Streamlit web app.
+
+# 3.Features
+
+Highlight key functionalities:
+
+🖌 AI-generated comic panels
+
+⚡ Fast and interactive web-based UI (built with Streamlit)
+
+
+4. Demo
+
+Include a short video or GIF showcasing the tool.
+
+5. Installation
+
+Provide step-by-step instructions:
+
+# Clone the repository
+git clone https://github.com/yourusername/comiccrafter.git
+cd comiccrafter
+
+# Dependencies
+ 1. [Python 3.8+](https://www.python.org/downloads/)
+
+ 2. pip
+
+ 3. Streamlit : ```pip install streamlit```
+
+ 4. [Ollama](https://ollama.com/) 
+
+ 5. [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+[Custom GGUF node](https://github.com/city96/ComfyUI-GGUF)
+[Model name: flux1-dev-Q4_0.gguf](https://huggingface.co/city96/FLUX.1-dev-gguf/tree/main)
+[Encoder 1 :clipl](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main)
+[Encoder 2 :t5 encoder](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main)
+[VAE file](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors)
+ 6. Mistral model (for local text processing)
+    - Download the Mistral model in ollama using the following command
+    ```ollama run mistral```
+ 7. Flux.1 Dev GGUF model (for image generation)
+
+
+# Run the app
+streamlit run app.py
+
+6. Usage
+
+Explain how to use the tool effectively with screenshots.
+
+7. Architecture
+
+Describe the technical stack and workflow:
+
+Frontend: Streamlit
+
+AI Models: DeepSeek, Stable Diffusion
+
+Backend: Python (FastAPI if applicable)
+
+Deployment: (e.g., Hugging Face, AWS, or other platforms)
+
+
+(Optional: Include an architecture diagram.)
+
+8. Contribution Guidelines
+
+Provide a brief contribution guide and link to CONTRIBUTING.md.
+
+9. Roadmap
+
+List planned features and improvements.
+
+10. License
+
+Mention the project's license (e.g., MIT, Apache 2.0).
+
+
+# 🎨 ComicCrafter  : A Next-Gen AI-Powered Comic Generation Tool 
+
+# 1.Description
+
+ComicCrafter is an AI-powered tool that helps users generate comics using text prompts and AI-generated illustrations.  
+It combines DeepSeek for text processing and Flux.1 for image generation, wrapped in a Streamlit web app.
+
+# 3.Features
+
+Highlight key functionalities:
+
+🖌 AI-generated comic panels
+
+⚡ Fast and interactive web-based UI (built with Streamlit)
+
+
+4. Demo
+
+Include a short video or GIF showcasing the tool.
+
+5. Installation
+
+Provide step-by-step instructions:
+
+# Clone the repository
+git clone https://github.com/yourusername/comiccrafter.git
+cd comiccrafter
+
+# Dependencies
+ 1. [Python 3.8+](https://www.python.org/downloads/)
+
+ 2. pip
+
+ 3. Streamlit : ```pip install streamlit```
+
+ 4. [Ollama](https://ollama.com/) 
+
+ 5. [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+[Custom GGUF node](https://github.com/city96/ComfyUI-GGUF)
+[Model name: flux1-dev-Q4_0.gguf](https://huggingface.co/city96/FLUX.1-dev-gguf/tree/main)
+[Encoder 1 :clipl](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main)
+[Encoder 2 :t5 encoder](https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf/tree/main)
+[VAE file](https://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors)
+ 6. Mistral model (for local text processing)
+    - Download the Mistral model in ollama using the following command
+    ```ollama run mistral```
+ 7. Flux.1 Dev GGUF model (for image generation)
+
+
+# Run the app
+streamlit run app.py
+
+6. Usage
+
+Explain how to use the tool effectively with screenshots.
+
+7. Architecture
+
+Frontend: Streamlit
+
+AI Models: Mistral,Flux.1
+
+Backend: Python 
+
+Deployment: Completely Local
+
+
+
+
