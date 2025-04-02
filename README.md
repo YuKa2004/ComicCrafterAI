@@ -48,6 +48,8 @@ Run the app
 output for the prompt : world war 2 enemies turned to friends
 ![Screenshot 2025-04-02 230158](https://github.com/user-attachments/assets/73d2b9b6-0599-43d9-ac7e-f9bf1ad2274e)
 
+# Video demonstration of the project: [youtube link](https://youtu.be/FxCLyE5Y0KA)
+
 
 
 # 5.Architecture
